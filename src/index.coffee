@@ -69,10 +69,12 @@ module.exports = (callback) ->
     client = new Client { username, password, domain }
     client.fetch()
       .then ({ today, weekly, monthly, total }) ->
-        'hatena-blog-today': today
-        'hatena-blog-weekly': weekly
-        'hatena-blog-monthly': monthly
-        'hatena-blog-total': total
+        counts =
+          'hatena-blog-today': today
+          'hatena-blog-weekly': weekly
+          'hatena-blog-monthly': monthly
+          'hatena-blog-total': total
+        callback null, counts
       .catch (error) ->
         callback error
   catch error
