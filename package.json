@@ -21,7 +21,9 @@
   },
   "homepage": "https://github.com/bouzuya/cars-counter-hatena-blog-accesslog#readme",
   "keywords": [
-    "cars"
+    "cars",
+    "cars-counter",
+    "hatena"
   ],
   "license": "MIT",
   "main": "index.js",
